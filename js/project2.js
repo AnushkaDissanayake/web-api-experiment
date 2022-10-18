@@ -92,7 +92,7 @@ class Box{
 }
 
 const boxes = [];
-for(let i = 0; i < 70; i++){
+for(let i = 0; i < 50; i++){
     boxes.push(new Box());
 }
 
