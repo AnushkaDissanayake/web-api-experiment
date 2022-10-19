@@ -1,4 +1,4 @@
-let textArray = ['ANUSHKA MADUSANKA DISSANAYAKE', 'THIS IS WEB-API PROJECT'];
+let textArray = ['ANUSHKA MADUSANKA DISSANAYAKE', 'THIS IS WEB-API EXPERIMENT'];
 
 const output = document.getElementById('output');
 const cursor = document.getElementById('cursor-elm');
