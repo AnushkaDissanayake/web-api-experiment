@@ -13,7 +13,6 @@ let text = textArray[0];
 let i=1;
 let eindex=text.length-1;
 const typing = () => {
-    console.log('typing');
     if(!erace){
         if(index<=text.length){
             textField.innerText=text.substring(0,index++);
