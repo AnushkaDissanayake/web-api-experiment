@@ -46,12 +46,12 @@ function timer(timestamp) {
     if (!t1) t1 = timestamp;
     if (!t2) t2 = timestamp;
 
-    if (timestamp - t1 > 90) {
+    if (timestamp - t1 > 80) {
         typing();
         t1 = timestamp;
     }
 
-    if (timestamp - t2 > 50) {
+    if (timestamp - t2 > 40) {
         eracing();
         t2 = timestamp;
     }

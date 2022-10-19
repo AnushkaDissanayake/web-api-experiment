@@ -22,8 +22,8 @@ class Box{
         this.#elm.classList.add('box');
         this.#width = 20 + (Math.random() * 10);
         this.#height =  this.#width;
-        this.#dx = Math.random() * 8 * (Math.random() < 0.5? -1: 1);
-        this.#dy = Math.random() * 8 * (Math.random() < 0.5? -1: 1);
+        this.#dx = Math.random() * 9 * (Math.random() < 0.5? -1: 1);
+        this.#dy = Math.random() * 9 * (Math.random() < 0.5? -1: 1);
         this.#elm.style.left = `${Math.random() * (innerWidth - this.#width)}px`;
         this.#elm.style.top = `${Math.random() * (innerHeight - this.#height)}px`;
         this.#elm.style.width = `${this.#width}px`;
