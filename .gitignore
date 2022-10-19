@@ -1,1 +1,3 @@
-partials/**/css/
+scss/
+partials/
+.vscode/
