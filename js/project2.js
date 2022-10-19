@@ -1,5 +1,3 @@
-// const vW = innerWidth - 50;
-// const vH = innerHeight - 50;
 class Box{
     #width;
     #height;
@@ -7,8 +5,8 @@ class Box{
     #dy;
     #elm;
     #cursorElm;
-    #radius;
-    #cursorRadius=75;
+    #diameter;
+    #cursorDiameter=75;
     #length;
     #midX=0;
     #midY=0;
@@ -23,7 +21,7 @@ class Box{
         this.#elm = document.createElement('div');
         this.#elm.classList.add('box');
         this.#width = 20 + (Math.random() * 10);
-        this.#height =  this.#width; //20 + (Math.random() * 10);
+        this.#height =  this.#width;
         this.#dx = Math.random() * 8 * (Math.random() < 0.5? -1: 1);
         this.#dy = Math.random() * 8 * (Math.random() < 0.5? -1: 1);
         this.#elm.style.left = `${Math.random() * (innerWidth - this.#width)}px`;
@@ -38,9 +36,9 @@ class Box{
         this.#elm.style.backgroundColor = `rgba(${red},${green}, ${blue}, ${alpha})`;
         this.#elm.style.borderRadius = `${Math.random() * 101}%`;
         this.#elm.style.transform = `rotate(${Math.random() * 361}deg)`;
-        this.#radius=Math.sqrt(Math.pow(this.#width,2)+Math.pow(this.#height,2));
-        this.#length=this.#radius/2+this.#cursorRadius/2;
-        console.log(this.#dx,this.#dy);
+        this.#diameter=Math.sqrt(Math.pow(this.#width,2)+Math.pow(this.#height,2));
+        this.#length=this.#diameter/2+this.#cursorDiameter/2;
+    
     }
 
     move(){
@@ -68,7 +66,7 @@ class Box{
             if(nextDistance>nextDistance2){
                 this.#dx = this.#dx;
                 this.#dy = this.#dy;
-                this.#k=3;
+                this.#k=4;
 
             }else{
                 if(this.#count==0){
@@ -92,7 +90,7 @@ class Box{
 }
 
 const boxes = [];
-for(let i = 0; i < 50; i++){
+for(let i = 0; i < 60; i++){
     boxes.push(new Box());
 }
 

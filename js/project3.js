@@ -1,4 +1,4 @@
-let textArray = ['ANUSHKA MADUSANKA DISSANAYAKE', 'THIS IS WEB-API PROJECT'];
+let textArray = ['ANUSHKA MADUSANKA DISSANAYAKE', 'THIS IS WEB-API EXPERIMENT '];
 
 const output = document.getElementById('output');
 const cursor = document.getElementById('cursor-elm');
@@ -46,12 +46,12 @@ function timer(timestamp) {
     if (!t1) t1 = timestamp;
     if (!t2) t2 = timestamp;
 
-    if (timestamp - t1 > 80) {
+    if (timestamp - t1 > 90) {
         typing();
         t1 = timestamp;
     }
 
-    if (timestamp - t2 > 40) {
+    if (timestamp - t2 > 50) {
         eracing();
         t2 = timestamp;
     }
